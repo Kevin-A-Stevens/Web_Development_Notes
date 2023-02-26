@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Web Design Notes</title>
 </head>
 <body>
+
+  <div>
+    <h2>Home</h2>
+    <a href="./index.html"><img class="logo" src="./img/home.png" alt="Home"></a>
+</div>
 
     <h1>Web Design Notes</h1>
 
@@ -96,7 +102,7 @@
     </ol>
 
     <h1>Rules of Website Design</h1>
-    <h2>Rule #1</h2>
+    <h2>Rule #1 Typography</h2>
     <ol>
         <li>Typography - Choose one or two, not more</li>
         <li>Use https://fonts.google.com/ or https://type-scale.com/</li>
@@ -116,191 +122,176 @@
         <li>Don't center long text blocks. Small blocks are fine</li>
     </ol>
 
-    <h2>Rule #2</h2>
-    <!-- 
+    <h2>Rule #2 Colors</h2>
 
+    <ol>
+      <li>Use https://yeun.github.io/open-color/</li>
+      <li>https://coolors.co/ -- More > Contrast Checker</li>
+      <li>Choose a color that matches your websites personality - See above</li>
+      <ol>
+        <li>Red - symbolizes power, passion, excitement</li>
+        <li>orange - less aggressive, happiness, cheerfulness, creativity</li>
+        <li>yellow - joy, brightness,  intelligence</li>
+        <li>green - represents harmony, nature, health</li>
+        <li>blue - peace, trustworthiness, professionalism</li>
+        <li>purple - wealth, wisdom, magic</li>
+        <li>pink - romance, care, affection</li>
+        <li>brown - nature, durability, comfort</li>
+        <li> black - power, elegance, minimalism, grief, sorrow</li>
+      </ol>
+      <li>Choose a good color tone - Open color, tailwind CSS, flat UI Colors</li>
+      <li>Choose a Main color and a Grey color (text is usually grey color)</li>
+      <li>Choose a secondary color for an accent color if you want. Needs to be a relationship with the main color</li>
+      <li>For diversity, create lighter and darker versions of your chosen colors - palleton.com, coolors</li>
+      <li>Main color - draw attention to the main element of a page such as a button and/or logo</li>
+      <li>Use colors to add accents or make components and sections stand out</li>
+      <li>Use colors strategically in images and illustrations</li>
+      <li>For dark backgrounds, try to use a tint of teh background (lighter version) for text</li>
+      <li>Text should not be completely black - Use a shade of grey instead</li>
+      <li>Don't make your text too light</li>
+    </ol>
 
-/* RULE #2 Colors 
-  https://yeun.github.io/open-color/
-  https://coolors.co/ -- More > Contrast Checker
-  Choose a color that matches your websites personality - See above
-  Red - symbolizes power, passion, excitement
-  orange - less aggressive, happiness, cheerfulness, creativity
-  yellow - joy, brightness,  intelligence
-  green - represents harmony, nature, health
-  blue - peace, trustworthiness, professionalism
-  purple - wealth, wisdom, magic
-  pink - romance, care, affection
-  brown - nature, durability, comfort
-  black - power, elegance, minimalism, grief, sorrow
-  -------------------------------
-  Choose a good color tone - Open color, tailwind CSS, flat UI Colors
-  -------------------------------
-  Choose a Main color and a Grey color (text is usually grey color)
-  Choose a secondary color for an accent color if you want. Needs to be a relationship with the main color
-  For diversity, create lighter and darker versions of your chosen colors - palleton.com, coolors
-  -------------------------------
-  Main color - draw attention to the main element of a page such as a button and/or logo
-  Use colors to add accents or make components and sections stand out
-  Use colors strategically in images and illustrations
-  For dark backgrounds, try to use a tint of teh background (lighter version) for text
-  Text should not be completely black - Use a shade of grey instead
-  Don't make your text too light
-  */
+    <h2>Rule #3 Images and Illustrations</h2>
+    <ol>
+      <li>Use https://unsplash.com/ or https://squoosh.app/</li>
+      <li>Product Photos - illustrate the product</li>
+      <li>Storytelling photos - helps to convey the message of your website (most important)</li>
+      <li>Illustrations - abstract way of doing storytelling</li>
+      <li>Patterns - background of an entire sections or behind images to add a visual image detail. Adds creativity</li>
+      <li>Prefer original images you take yourself or by a professional photographer if budget allows</li>
+      <li>Try to show real people to trigger emotions</li>
+      <li>If necessary, crop your images to fit your message</li>
+      <li>Combine photos, illustrations, and patterns</li>
+      <li>Darken or brighten the image where the text is</li>
+      <li>Position text into a neutral area</li>
+      <li>Put text in box, perhaps putting opacity on the box</li>
+      <li>For high res screens, make image dimensions 2x as big as their display size</li>
+      <li>Compress images for a lower filer size and better performance</li>
+    </ol>
 
-/* RULE #3 Images and Illustrations
-  https://unsplash.com/
-  https://squoosh.app/
-  Product Photos - illustrate the product
-  Storytelling photos - helps to convey the message of your website (most important)
-  Illustrations - abstract way of doing storytelling
-  Patterns - background of an entire sections or behind images to add a visual image detail. Adds creativity
-  Prefer original images you take yourself or by a professional photographer if budget allows
-  Try to show real people to trigger emotions
-  If necessary, crop your images to fit your message
-  Combine photos, illustrations, and patterns
-  -----------------------------
-  Darken or brighten the image where the text is
-  Position text into a neutral area
-  Put text in box, perhaps putting opacity on the box
-  -----------------------------
-  For high res screens, make image dimensions 2x as big as their display size
-  Compress images for a lower filer size and better performance
-  */
+    <h2>Rule #4 Icons</h2>
+    <ol>
+      <li>Use icons only from one icon pack. Don't mix</li>
+      <li>Use https://heroicons.com/</li>
+      <li>Use a good icon pack: phosphor icons, ionicons, icons8</li>
+      <li>You can use emojis as well</li>
+      <li>Use only one item pack</li>
+      <li>Use only SVG icons or icon fonts (do not use .jpg or.png for icons as they do not scale)</li>
+      <li>Adjust to website personality (roundness, weight, filled, outlined depend on typography)</li>
+      <li>Use icons to provide visual assistance</li>
+      <li>Use icons to build feature blocks - describe features of a service</li>
+      <li>Use icons associated with actions, and label them</li>
+      <li>Use icons as bullet points</li>
+      <li>Keep icons neutral. Use same color as text. To draw more attention, use a different color</li>
+      <li>Use icons that make sense and fit the text or action you want to convey</li>
+      <li>Don't make icons larger than what they were designed for</li>
+    </ol>
 
-/* RULE #4 Icons
-  Use icons only from one icon pack. Don't mix
-  https://heroicons.com/
-  Use a good icon pack: phosphor icons, ionicons, icons8
-  You can use emojis as well
-  Use only one item pack
-  Use only SVG icons or icon fonts (do not use .jpg or.png for icons as they do not scale)
-  Adjust to website personality (roundness, weight, filled, outlined depend on typography)
-  Use icons to provide visual assistance
-  Use icons to build feature blocks - describe features of a service for example
-  Use icons associated with actions, and label them
-  Use icons as bullet points
-  -------------------------------
-  Keep icons neutral. Use same color as text. To draw more attention, use a different color
-  Use icons that make sense and fit the text ot action you want to convey
-  Don't make icons larger than what they were designed for
-  */
+    <h2>Rule #5 Shadows</h2>
+    <ol>
+      <li>Shadows create depth and adds a 3d element to our design</li>
+      <li>Use shadows only if it makes sense for the website personality</li>
+      <li> The more playful a design gets, the more shadows you can use</li>
+      <li>Less shadows for more serious and elegant the design</li>
+      <li>Go light on shadows and don't go too dark</li>
+      <li>Use shadows on elements you want to draw attention to such as button</li>
+      <li>Use medium sized shadows for larger areas that should stand out more like an entire section or cards</li>
+      <li>Use large shadows for elements you want to float above the interface like navigation or pop ups</li>
+      <li>Change shadows on mouse interaction like click or hover</li>
+    </ol>
 
-/* RULE #5 Shadows
-  Shadows create depth and adds a 3d element to our design
-  Use shadows only if it makes sense for the website personality
-  The more playful a design gets, the more shadows you can use
-  Less shadows for more serious adn elegant the design
-  Go light on shadows and don't go too dark
-  Use shadows on elements you want to draw attention to such as button
-  Use medium sized shadows for larger areas that should stand out more like an entire section or cards
-  Use large shadows for elements you want to float above the interface like navigation or pop ups
-  Change shadows on mouse interaction like click or hover
-   */
+    <h2>Rule #6 Border Radius</h2>
+    <ol>
+      <li>Increase the playfulness and fun of the design</li>
+      <li>Typeface can determine how much border-radius and certain typography is more round than others</li>
+      <li>Buttons use border radius the most</li>
+      <li>Images and icons are also common to have border-radius</li>
+    </ol>
 
-/* RULE #6 Border Radius 
-  Increase the playfulness and fun of the design
-  typeface can determine how much border-radius and certain typography is more round than others
-  buttons use border radius the most
-  images and icons are also common to have border-radius
-   */
+    <h2>Rule #7 White Space</h2>
+    <ol>
+      <li>Makes the design clean, modern, and polished</li>
+      <li>Use whitespace between sections and between groups of elements</li>
+      <li>Usually need more white space vertically than horizontally between elements</li>
+      <li>Inside groups of elements, try to use whitespace instead of lines</li>
+      <li>Use the law of proximity - groups of elements belong together, the closer they should be</li>
+      <li>Start with a lot of whitespace, then remove whitespace until it looks right</li>
+      <li>Match other design choices - huge text should equal more whitespace</li>
+      <li>Try using a hard rule such as multiples of 16px for all margins and paddings on a page</li>
+      <li>2, 4, 8, 12, 16, 32, 48, 64, 80, 96, 128</li>
+    </ol>
 
-/* RULE #7 White Space
-   Makes the design clean, modern, and polished
-   Use whitespace between sections and between groups of elements
-   usually need more white space vertically than horizontally between elements
-   Inside groups of elements, try to use whitespace instead of lines
-   Use the law of proximity - groups of elements belong together, the closer they should be
-   start with a lot of whitespace, then remove whitespace until it looks right
-   match other design choices - huge text should equal more whitespace
-   Try using a hard rule such as multiples of 16px for all margins and paddings on a page
-    2, 4, 8, 12, 16, 32, 48, 64, 80, 96, 128
-   */
+    <h2>Rule #8 Visual Hierarchy</h2>
+    <ol>
+      <li>Which element of a design are the the most ones</li>
+      <li>Define a path for users to guide them through the page</li>
+      <li>Position important elements closer to the top of the page where they get more attention</li>
+      <li>First call-to-action also as close as possible to the top of the page</li>
+      <li>White space creates separation so use whitespace strategically to emphasize elements</li>
+      <li>Text - use font size, font weight, color, and whitespace to convey importance</li>
+      <li>Emphasize titles, sub-titles, links, buttons, data points, icons</li>
+      <li>De-emphasize less important text, labels, secondary/additional information</li>
+      <li>Components to stand out: testimonials, call-to-action sections, highlight sections, preview cards, forms, pricing tables, important rows/columns in tables</li>
+    </ol>
 
-/* RULE #8 Visual Hierarchy 
-   Which element of a design are the the most ones
-   Define a path for users to guide them through the page
-   Position important elements closer to the top of the page where they get more attention
-   First call-to-action also as close as possible to the top of the page
-   white space creates separation so use whitespace strategically to emphasize elements
-   Text - use font size, font weight, color, and whitespace to convey importance
-   Emphasize titles, sub-titles, links, buttons, data points, icons
-   De-emphasize less important text, labels, secondary/additional information
-   Components to stand out: testimonials, call-to-action sections, highlight sections, preview cards,
-      forms, pricing tables, important rows/columns in tables
-   */
+    <h2>Rule #9 User Experience (UX)</h2>
+    <ol>
+      <li>Don't design complicated layouts. Use patterns that users know</li>
+      <li>Make you call-to-action the most prominent element, and make the text descriptive</li>
+      <li>Use blue text and underline text only for links</li>
+      <li>Animations should have a purpose and be fast. Between 200ms and 500ms</li>
+      <li>Forms - align labels and fields in a single vertical line gto make the form easier to scan</li>
+      <li>Offer users good feedback for all actions: form errors, form success, etc</li>
+      <li>Law of locality - place buttons where they will create an effect. Does not apply to call-to-action</li>
+      <li>Write a descriptive headline, keyword-focused on your main page</li>
+      <li>Only include relevant information. Everything presented should have a very clear purpose</li>
+      <li>Use simple words and avoid technical jargon</li>
+      <li>Break up long text with sub-headings, images, block quotes, bullet points, etc</li>
+    </ol>
 
-/* RULE #9 User Experience (UX)
-   Don't design complicated layouts. Use patterns that users know
-   Make you call-to-action the most prominent element, and make the text descriptive
-   Use blue text and underline text only for links
-   Animations should have a purpose and be fast. Between 200ms and 500ms
-   Forms - align labels and fields in a single vertical line gto make the form easier to scan
-   Offer users good feedback for all actions: form errors, form success, etc
-   Law of locality - place buttons where they will create an effect. Does not apply to call-to-action
-   Write a descriptive headline, keyword-focused on your main page
-   Only include relevant information. Everything presented should have a very clear purpose
-   Use simple words and avoid technical jargon
-   Break up long text with sub-headings, images, block quotes, bullet points, etc
-   */
+    <h2>Rule #10 Building a Webpage</h2>
+    <ol>
+      <li>Build your elements - headers, paragraphs, etc you use to present the information you want</li>
+      <li>Elements - text, buttons, images, input elements, tags</li>
+      <li>Build your components by combining elements</li>
+      <li>Components - Breadcrumbs, pagination, alert/status bars, statistics, gallery, feature box, preview/portfolio cards, accordion, tabs, carousel, customer testimonials, logos, featured-in logos, steps, forms, tables, pricing tables, modal windows, etc</li>
+      <li>Section components - navigation, hero section, footer, call-to-action section, feature row</li>
+      <li>Combine components into a common layout pattern</li>
+      <li>Layout patterns - Row of boxes/cards, grid of boxes/cards, Z-pattern, F-pattern, Single column, Sidebar, Multi-column magazine, Asymmetry/Experimental</li>
+      <li>Assemble a final page from your layout</li>
+    </ol>
 
-/* The Website Personality Framework 
-   Choose how you want the website to appear to users
-   Choose one of the website personalities accordingly
-   Apply personality traits to each of the design ingredients
-   01 - Serious/Elegant - thin serif typefaces, golden or pastel colors, big high quality images
-      usually no shadows and no border radius and no icons
-   02 - Minimalist/Simple - use for portfolios. boxy, sans-serif typefaces, black or dk grey color, just
-      one main color, few images, small black icons
-   03 - Plain/Neutral - sans-serif, nothing too bright, blues and black, images are frequently used. simple
-      icons may be used, usually no shadows or border radius
-   04 - Bold/Confident - boxy/squared typefaces, big and bold. bright colors and big color sections. lots of
-      big images. usually not used are icons, shadows, or border-radius
-   05 - Calm/Peaceful - soft serif typefaces, light orange or yellows, browns, greens, blues. images have a lot of people and match color palette. Icons are frequent. Shadows used sparingly, some border-radius us usual 
-   06 - Startup/Upbeat - usually sans-serif typography, green, blue, purple for primary, light grey for 
-     background, common to use gradient. Images are always used and 3d illustrations. subtle shadows
-     border-radius is common and icons are also frequent
-   07 - Playful/Fun - round creative typography and sans-serif. Multiple colors. Images are 3d and 
-     illustrations. icons, shadows, and border-radius are frequent
-    ---------------------------------------
-  COMBINING DESIGNS
-  Can mix two by using one main personality with a secondary personality
+    <h2>The Website Personality Framework</h2>
 
-  THE MISSING PIECE
-  Design Ingredients
-  Website Personalities
-  Design Guidelines and Rules
-  Getting Inspired and Steal Like an Artist
-  https://land-book.com/
-  https://onepagelove.com/
-  https://www.awwwards.com/
-  https://screenlane.com/
-  Take good parts of one or many good designs and adapt them to your need while using the guidelines we 
-  learned above
-   */
+    <ol>
+      <li>Choose how you want the website to appear to users</li>
+      <li>Choose one of the website personalities accordingly</li>
+      <li>Apply personality traits to each of the design ingredients</li>
+      <ol>
+        <li>Serious/Elegant - thin serif typefaces, golden or pastel colors, big high quality images. Usually no shadows and no border radius and no icons</li>
+        <li>Minimalist/Simple - use for portfolios. boxy, sans-serif typefaces, black or dk grey color, just one main color, few images, small black icons</li>
+        <li>Plain/Neutral - sans-serif, nothing too bright, blues and black, images are frequently used. simple icons may be used, usually no shadows or border radius</li>
+        <li>Bold/Confident - boxy/squared typefaces, big and bold. bright colors and big color sections. lots of big images. usually not used are icons, shadows, or border-radius</li>
+        <li>Calm/Peaceful - soft serif typefaces, light orange or yellows, browns, greens, blues. images have a lot of people and match color palette. Icons are frequent. Shadows used sparingly, some border-radius us usual</li>
+        <li>Startup/Upbeat - usually sans-serif typography, green, blue, purple for primary, light grey for background, common to use gradient. Images are always used and 3d illustrations. subtle shadows, border-radius is common and icons are also frequent</li>
+        <li>Playful/Fun - round creative typography and sans-serif. Multiple colors. Images are 3d and illustrations. icons, shadows, and border-radius are frequent</li>
+      </ol>
+      <li>Can mix two designs by using one main personality with a secondary personality</li>
+      <ol>
+        <li>The Missing Piece</li>
+        <ol>
+          <li>Design Ingredients</li>
+          <li>Website Personalities</li>
+          <li>Design Guidelines and Rules</li>
+          <li>Getting Inspired and Steal Like an Artist</li>
+          <li>https://land-book.com/</li>
+          <li>https://onepagelove.com/</li>
+          <li>https://www.awwwards.com/</li>
+          <li>https://screenlane.com/</li>
+          <li>Take good parts of one or many good designs and adapt them to your need while using the guidelines we learned above</li>
+        </ol>
+      </ol>
+    </ol>
 
-/* 
-  MAIN COLOR: #087f5b
-  LIGHT COLOR: #099268
-  GREY COLOR: #343a40
-  LIGHT GREY: #495057
-  */
-
-/* RULE #10 - Building a Web Page
-  Build your elements - headers, paragraphs, etc you use to present the information you want
-    Elements - text, buttons, images, input elements, tags
-  Build your components by combining elements
-    Components - Breadcrumbs, pagination, alert/status bars, statistics, gallery, feature box
-    Preview/portfolio cards, accordion, tabs, carousel, customer testimonials, logos, 
-    featured-in logos, steps, forms, tables, pricing tables, modal windows, etc
-    Section components - navigation, hero section, footer, call-to-action section, feature row
-  Combine components into a common layout pattern
-    Layout patterns - Row of boxes/cards, grid of boxes/cards, Z-pattern, F-pattern, Single column,
-    Sidebar, Multi-column magazine, Asymmetry/Experimental
-  Assemble a final page from your layout
-  */
-
-/* 
-  / -->
 </body>
 </html>
