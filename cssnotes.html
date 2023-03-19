@@ -4,9 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>CSS notes</title>
 </head>
 <body>
+    <div>
+        <h2>Home</h2>
+        <a href="./index.html"><img class="logo" src="./img/home.png" alt="Home"></a>
+    </div>
+    <h2>Styling text</h2>
+    <p>color: value = changes text color</p>
+    <p>font-size: value = size of text</p>
+    <p>font-family: values = specify type of font</p>
+    <p>text-transform: uppercase = change text (uppercase, lowercase, capitalize) </p>
+    <p>font-style: value = change style of text like to italic</p>
+    <p>line-height: 1.5 = change line height or space between lines</p>
+    <p>text-align: center = aligns text to center, end, start</p>
+    <p>font-weight: bold = change weight of font, can also use numbers</p>
+    <p>list-style: none = used to remove bullet points from lists </p>
+
+    <h2>Combining Selectors</h2>
+    <p>h1, h2, h3 {} = select h1, h2, and h3 elements</p>
+    <p>header p {} = select all p elements inside a header selector. Descendants</p>
+    <p>article header p {} = select all p elements inside a header element that is inside an article element</p>
+    <p>h3 + p::first-line {} = + is the adjacent sibling selector</p>
+
+    <h2>Class and ID selectors</h2>
+    <p>class="" and id="" can be selected using . and # in css</p>
+
+    <h2>Working with colors</h2>
+    <p>RGB = Red, Green, Blue</p>
+    <p>rgb(244, 179, 63)</p>
+    <p>rgba(0, 255, 255, 0.3) = gives transparency</p>
+    <p>Hexadecimal - 0 to ff</p>
+    <p>#00ffff</p>
+
+    <p>background-color: #f7f7f7;</p>
+    <p>border: 5px solid #1098ad; - width style color</p>
+    <p>border-top: 5px solid #1098ad; - width style color</p>
+    <p>border-bottom: 5px solid #1098ad; - width style color</p>
+    <p>border-left: 5px solid #1098ad; - width style color</p>
+    <p>border-right: 5px solid #1098ad; - width style color</p>
+
+    <h2>Pseudo-classes</h2>
+    <p>li:first-child {} = first child inside all li elements</p>
+    <p>li:last-child {} = last child inside all li elements</p>
+    <p>li:nth-child(2) {} = 2nd child inside all li elements</p>
+    <p>li:nth-child(odd) {} = odd children inside all li elements</p>
+
+    <h2>Styling links</h2>
+    <p>a:link {} = style a elements that only have a href attribute</p>
+    <p>text-decoration: none; = remove the underline on links</p>
+    <p>a:visited {} = assign css to a link that has been clicked on before</p>
+    <p>a:hover {} = adds css to a link when cursor hovers over it</p>
+    <p>a:active {} = adds css to a link that is active</p>
+
+    <h2>CSS conflicts</h2>
+    <p>ID, class/pseudo-class, element, universal</p>
+
+    <h2>Inheritance</h2>
+    <p>Use the body element to set certain styles which will be inherited to all child elements. Text elements are mostly the ones to get inherited</p>
+
+    <h2>CSS Box model</h2>
+    <p>Padding = any space we can add inside of an element</p>
+    <p>margin = create space between elements</p>
+    <p>padding: 20px;</p>
+    <p>padding-left: 40px;</p>
+    <p>padding-right: 40px;</p>
+    <p>padding: 20px 40px; = top/bottom left/right</p>
+    <p>margin-bottom: 10px </p>
+
+    <h2>Setting Dimensions</h2>
+    <p>width: 500px; = sets width on elements</p>
+    <p>height: 80px; = sets height on an element</p>
+    <p>Very common to size images in CSS</p>
+    <p>common is to set the width to a size and height to auto</p>
+    <p>width: 100%;</p>
+    <p>height: auto; if height is already specified, otherwise the other one will automatically adapt</p>
+
+    <h2>Centering our page</h2>
+    <p>Put all content into a container element</p>
+    <p>Put a div at the start of the body and end of the body</p>
+    <p>Give the div a class of container</p>
+    <p>.container {width: 800px; margin-left: auto; margin-right: auto;}</p>
+    <p>.container {width: 800px; margin: 0 auto;}</p>
+    <p>display: block; = change element to block, inline, flex, grid, etc</p>
+
+    <h2>Absolute positioning</h2>
+    <p>position: absolute; = Take element out of the normal flow</p>
+    <p>top: 0;</p>
+    <p>left: 0;</p>
+    <p>Can also use right or bottom</p>
+
+    <h2>Pseudo elements</h2>
+    <p>h1::first-letter {font-size: 80px}</p>
+    <p>p::first-line {color: red}</p>
+    <p>h2::after {content: ""} = need to specify something here</p>
     
+    <h2>Layouts</h2>
+    <h3>Flexbox</h3>
+    <p>Flex container: display, gap, justify-content, align-items, flex-direction, flex-wrap, align-content </p>
+    <p>Flex items: align-self, flex-grow, flex-shrink, flex-basis(width), flex (shorthand for prev 3), order(all elements have an order of 0 unless specified with order)</p>
+
+    <p>Set display: flex on the container</p>
+    <p>flex is shorthand for flex-grow, flex-shrink, and flex-basis</p>
+
+    <h3>CSS Grid</h3>
+    <p>Grid container: grid-template-rows, grid-template-columns, row-gap (gap), column-gap (gap), justify-items, align-items, justify-content, align-content</p>
+    <p>Grid items: grid-column, grid-row, justify-self, align-self</p>
+
+    <p>box-sizing: border-box; = padding and border are included in the width and height:</p>
+
+    <p>use fr units when creating your rows and columns</p>
+
+    <p>Placing grid items</p>
+    <p>.grid-item{ grid-column: 2 / 3;} = start at column 2 and end at column 3</p>
+    <p>.grid-item:{ grid-row: 1 / 2;} = start at row 1 and end at row 2</p>
+    <p>.grid-item:{ grid-row: 1 / span 3;} = start at row 1 and span 3 cells</p>
+    <p>.grid-item:{ grid-row: 1 / -1;} = start at row 1 and go to end</p>
+
+    <p>Aligning tracks in a container with CSS grid</p>
+    <p>justify-content: center = align horizontally</p> 
+    <p>align-content: center = align vertically</p>
+    
+    <h2>Accordian component</h2>
+    <h2>Carousel component</h2>
+    <h2>Pagination component</h2>
+
+    <p>max-width: 1000px; = sets maximum width of element/container</p>
+
+    <p>border-raduis: 9px; = adds rounded corders to buttons/elements</p>
+    <p>border-raduis: 50%; = create a round button buttons/elements</p>
+    <p>Trick to add border inside</p>
+    <p>box-shadow: inset 0 0 0 3px #fff; = inset = add to inside of element</p>
+
+    <p>transition: all .3s = transition between two values to animate</p>
+    <p>transition is set on the parent</p>
+
+    <p>display: inline-block; = needed in order to set padding on some elements</p>
+
+    <p>letter-spacing: 0.75px; = spacing between letters</p>
+    <p>z-index: -1; = sets the level of elements</p>
+    
+    <p>text-transform: uppercase = change text</p>
+    <p>filter: grayscale(100%); = used for images</p>
+
+    <p>display: inline-block; if you want to use padding</p>
+
+    <p>Creating a hover affect</p>
+    <p>original state = transition: all 0.4s</p>
+    <p>original {box-shadow: 0 2.3rem 4.8rem rgba(0,0,0,0.075)}</p>
+    <p>.meal:hover {transform: translateY(-1.2rem)}</p>
+    <p>.meal:hover {box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06)}</p>
+    
+<h2>Advanced CSS</h2>
+<h3>Best way to perform a basic reset</h3>
+<p>* {margin: 0; padding: 0; box-sizing: border-box;}</p>
+
+<h3>Set project wide font definitions</h3>
+<p>body {font-family: "Lato", sans-serif; font-weight: 400; font-size: 16px;line-height: 1.7; color: #777; padding: 30px}</p>
+
+<h3>clip parts of elements</h3>
+<p>clip-path: polygon(x y, x y, x y, x y);</p>
+
+<p>background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,131,0.8)), url(../img/img1)</p>
+<p>background-size: cover</p>
+<p>background-position: top</p>
+<p>transform: translate(-50%, -50%)</p>
+
+<h3>Creating animations</h3>
+<p>@keyframes moveInLeft {0% {opacity: 0; transform: translateX(-100p;)} 80%{transform: translateX(20px)} 100%{opacity: 1; translate(0);}}</p>
+<p>animation-name: moveInLeft; animation-duration: 1s</p>
+<p>animation: moveInLeft 1s ease-out = shorthand</p>
+
+<p>backface-visibility: hidden = fix animations set on parent</p>
+
+<h3>complex animated button</h3>
+<p>.btn:link, .btn:visited {}</p>
+<p>text-transform: uppercase</p>
+<p>text-decoration: none</p>
+<p>padding: 15px 40px</p>
+<p>text-align: center</p>
+<p>border-radius: 100px</p>
+<p>transition: all .2s</p>
+
+<p>.btn:hover {}</p>
+<p>transform: translateY(-3px)</p>
+<p>box-shadow: 0 10px 20px rgba(0,0,0,.2)</p>
+
+<p>.btn:active {}</p>
+<p>transform: translateY(-1px)</p>
+<p>box-shadow: 0 5px 10px rgba(0,0,0,.2)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
 </body>
 </html>
